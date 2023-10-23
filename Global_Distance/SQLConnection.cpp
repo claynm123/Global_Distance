@@ -11,6 +11,7 @@ sqlite3* OpenDatabase(const string sqlFileLoc = "RigGeoData.sql") {
 
 	if (sqlConnCode) {
 		cout << "Error: Unable to open database: " << sqlFileLoc << endl;
+		return NULL;
 	}
 	else {
 		return geoDataTable;
